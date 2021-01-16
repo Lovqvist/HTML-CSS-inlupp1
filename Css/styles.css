@@ -1,0 +1,523 @@
+@import 'color.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+/* font-family: 'Roboto Slab', serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+.container {
+    width: 100%;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title);
+}
+
+a:hover {
+    color: var(--placehold-dark);
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  .btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+  
+  }
+  .btn-primary:hover {
+    background-color: var(--secondary);
+  }
+
+  .btn-secondary {
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    color: var(--secondary);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--secondary);
+    border: 1.5px solid #fff;
+    color: #fff;
+}
+
+
+
+/* Top menu */
+.top-menu {
+    display: none;
+    border-bottom: 0.1px solid var(--text); 
+    padding: 0.5rem;
+}
+
+.top-menu .container .hours i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.top-menu .container .social-icons a {
+    color: var(--secondary);
+    margin-left: 1rem;
+}
+
+.top-menu .container .social-icons a:hover{
+    color: var(--primary);
+}
+
+/* !MAIN MENU */
+.main-menu {
+    margin: 0.5rem 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-menu .container, .top-menu .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse:not(.show){
+    display: none;
+}
+
+.navbar-brand img {
+    height: 4rem;
+    padding-left: 0.5rem;
+}
+
+.nav-link {
+    list-style: none;
+    font-size: 1.12rem;
+}
+
+.navbar-nav {
+    flex-direction: column;
+    display: flex;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: var(--title);
+    padding-right: 0.5rem;
+}
+
+/* SHOWCASE */
+
+#showcase {
+    background-color: var(--placehold) ;  
+    min-height: 200px; 
+    padding-bottom: 1rem;
+}
+
+#showcase .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#showcase .container img {
+    display: none;
+    margin-top: 1rem;
+}
+#showcase .container .content, .appointment .container .text, #about-us .container .content {
+    align-self: center;
+    text-align: center;
+    height: 100%;
+    /* padding: 1rem */
+    
+}
+
+#showcase .container .content h1 { 
+    color: var(--title);
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-top: 1rem;
+}
+
+#showcase .container .content p {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+#showcase, #about-us {
+    margin: 1rem 0 1rem 0;
+}
+
+
+#about-us .container {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+#about-us .container .content h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 2rem; 
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h1 span {
+    color: var(--secondary); 
+}
+
+#about-us .container .content p {
+    margin: 1rem 0 1rem 0;
+}
+
+.stat-box h2 {
+    color: var(--secondary);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#about-us .container .content .flex .stat-box p {
+   margin: 0 0 1.5rem 0; 
+}
+#about-us img{
+    display: none;
+}
+
+#services {
+    background-color: var(--background);
+    min-height: 400px;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+#services .content {
+  text-align: center;
+  border-bottom: 3px solid var(--primary);
+  font-size: 2rem;
+  font-family: 'Roboto Slab', serif;
+  color: var(--title);
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
+#services .border {
+    background-color: #ffffff;
+    border-radius: 5px; 
+    padding: 1rem;  
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.box:hover .ball {
+    background-color: var(--secondary);
+    box-shadow: 0 0 5px 10px var(--hover-secondary);   
+}
+
+.box:hover {
+    box-shadow: 0 0 20px #ddd8d8;   
+}
+
+#services .box {
+    margin: 20px 0 0;
+    flex-basis: 32%;
+    
+}
+
+.flex .ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin: auto;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.flex .ball img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#services .flex h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+
+#appointment {
+    background-color: var(--secondary);
+    opacity: 0.8;
+    padding: 2rem 0;
+}
+
+
+#appointment .container .text {
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+
+#appointment .container .text p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#footer {
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+.footer p {
+    color: var(--text-footer);
+    opacity: 0.6;
+    font-size: 16px;
+    padding: 1.5rem 0 1.5rem 0;
+    text-align: center;
+}
+
+
+/* ?STÖRRE SKÄRM */
+@media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+        /* padding: 0 1rem;    */
+        width: 95%;
+    }
+   
+    .navbar-toggler {
+        display: none;
+    }
+    
+    .collapse:not(.show){
+        display: flex;
+    }
+
+    .navbar-brand img {
+        height: 5rem;
+        padding-left: 0rem;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .nav-link a{
+        padding: 1rem 0 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .top-menu {
+        display: block;
+    }
+  
+    .main-menu {
+        margin: 1.8rem 0;
+    }
+
+   
+    #showcase .container .content {
+        text-align: left;
+    }
+
+    #showcase .container img {
+        display: block;
+        height: 450px;
+        margin-right: 2rem;
+    }
+
+    #showcase .container .content h1 { 
+        font-size: 2rem;
+    }
+        
+    #showcase .container .content p {
+        font-size: 1rem;
+    }
+   
+    #showcase, #about-us {
+        padding: 0;
+    }
+
+    #about-us .flex {
+        display: flex;
+        justify-content: space-between;   
+    }
+    #about-us .flex .stat-box {
+        flex-direction: row;
+        /* margin-right: 5rem; */
+             
+    }
+
+    #about-us .container .content p {
+        margin-bottom: 2rem;
+    }
+
+    #services .container {
+        padding: 8rem 0;
+    }
+
+    #services .border {
+        padding: 3rem;  
+    }
+
+    #services .flex {
+        display: flex;
+        justify-content: space-between; 
+    }
+    #services .content {
+        width: 32%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    #services h1 {
+        margin: 2rem 0 1rem 0;
+    }
+
+    #appointment {
+        padding: 2.5rem 0;
+    }
+
+    #appointment .container .text {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        
+    } 
+    
+    #appointment .container .text button {
+        margin:auto 0;
+    }
+
+    .btn-primary, .btn-secondary {
+        margin: 0;
+        padding: 1rem 0;
+        width: 230px;
+    }
+
+    #appointment .container {
+        padding: 2rem 0 2rem 0;
+    }
+   
+}
+
+    @media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .nav-link a{
+        font-size: 1.12rem;
+    }
+
+    #showcase .container img {
+        display: block;
+        height: 500px;
+    }
+
+    #showcase .container .content h1 { 
+        font-size: 3rem;
+    }
+        
+    #showcase .container .content p {
+        font-size: 1rem;
+    }
+
+    #showcase, #about-us {
+        margin: 0;
+    }
+
+    #about-us img {
+        display: block;
+        margin-top: 3rem;
+        margin-right: 2rem;
+        margin-left: 1rem;
+        height: 600px;
+    }
+
+    
+    #about-us .container .content {
+        text-align: left;
+    }
+
+    #about-us .flex {
+        justify-content: unset;   
+    }
+    #about-us .flex .stat-box {
+        margin-right: 5rem;
+    }
+}
+
+    @media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    #showcase .container .content {
+        margin-left: 6rem;
+    }
+    #showcase .container img {
+        display: block;
+        height: 550px;
+    }
+
+    #showcase .container .content h1 { 
+        font-size: 3.5rem;
+    }
+        
+    #showcase .container .content p {
+        font-size: 1rem;
+        margin: 2rem 0 2rem 0;
+    }
+
+    #about-us img {
+        margin-left: 8rem;
+    }
+}
+
+
+    @media(min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    #showcase .container img {
+        display: block;
+        height: 650px;
+    }
+}
