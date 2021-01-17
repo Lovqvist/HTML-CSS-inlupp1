@@ -90,7 +90,7 @@ a:hover {
     color: var(--primary);
 }
 
-/* !MAIN MENU */
+/* MAIN MENU */
 .main-menu {
     margin: 0.5rem 0;
     font-family: 'Roboto Slab', serif;
@@ -108,6 +108,7 @@ a:hover {
 .navbar-brand img {
     height: 4rem;
     padding-left: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 .nav-link {
@@ -150,8 +151,6 @@ a:hover {
     align-self: center;
     text-align: center;
     height: 100%;
-    /* padding: 1rem */
-    
 }
 
 #showcase .container .content h1 { 
@@ -175,7 +174,6 @@ a:hover {
 
 #about-us .container {
     display: flex;
-    /* justify-content: space-around; */
 }
 
 #about-us .container .content h1 {
@@ -217,14 +215,14 @@ h1 span {
 }
 
 #services .content {
-  text-align: center;
-  border-bottom: 3px solid var(--primary);
-  font-size: 2rem;
-  font-family: 'Roboto Slab', serif;
-  color: var(--title);
-  font-weight: 400;
-  line-height: 1;
-  padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 3px solid var(--primary);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    color: var(--title);
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 1rem;
 }
 
 #services .border {
@@ -311,7 +309,6 @@ h1 span {
 }
 
 
-/* ?STÖRRE SKÄRM */
 @media(min-width: 768px) {
     .container {
         max-width: 720px;
@@ -338,7 +335,7 @@ h1 span {
     }
 
     .nav-link a{
-        padding: 1rem 0 1rem 1rem;
+        padding: 1rem 0 1rem 2rem;
         font-size: 1rem;
     }
 
@@ -378,17 +375,11 @@ h1 span {
         justify-content: space-between;   
     }
     #about-us .flex .stat-box {
-        flex-direction: row;
-        /* margin-right: 5rem; */
-             
+        flex-direction: row;       
     }
 
     #about-us .container .content p {
         margin-bottom: 2rem;
-    }
-
-    #services .container {
-        padding: 8rem 0;
     }
 
     #services .border {
@@ -481,7 +472,13 @@ h1 span {
     #about-us .flex .stat-box {
         margin-right: 5rem;
     }
+
+    #services .container {
+        padding: 6rem 0;
+    }
 }
+
+
 
     @media(min-width: 1200px) {
     .container {
